@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>dyt5AAUI&#39;s Hexo</title>
   
-  
+  <subtitle>blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dyt5aaui.github.io/"/>

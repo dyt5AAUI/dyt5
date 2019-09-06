@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="keywords" content="你好，Hexo, dyt5AAUI&#39;s Hexo">
     <meta name="description" content="这是一篇测试文章。
-">
+
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -333,7 +336,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        8
+                        60
                     </div>
                     
 
@@ -357,7 +360,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>这是一篇测试文章。</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr>
 
@@ -448,6 +469,9 @@
                         
                             这是一篇测试文章。
 
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src
                         
                     </div>
                     <div class="publish-info">
@@ -617,7 +641,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">81</span>
+                <span class="white-color">185</span>
             
 
             
